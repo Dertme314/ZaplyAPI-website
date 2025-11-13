@@ -1,0 +1,182 @@
+/* Reset & basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1e1e1e; /* dark grey base */
+  color: #e6edf3;
+  font-family: 'Consolas', monospace;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #2a2a2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #444;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  color: #ffd700; /* lightning yellow */
+}
+
+nav a {
+  color: #c9d1d9;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Hero section */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(145deg, #3a3a3a, #2a2a2a); /* grey gradient like icon */
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.hero h2 {
+  color: #ffd700; /* lightning yellow */
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #c0c0c0;
+  max-width: 600px;
+  margin: 10px auto 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #1e1e1e;
+  background: #c0c0c0;
+  border: 2px solid #ffd700;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.buttons a:hover {
+  background: #b0b0b0;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  border-color: #ffaa00;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+h3 {
+  color: #ffd700;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 50px;
+  height: 3px;
+  background: #ffaa00;
+  border-radius: 3px;
+}
+
+/* Feature cards */
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card h4 {
+  color: #ffd700;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #c9c9c9;
+}
+
+/* Contributors */
+#contributors ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#contributors li a {
+  text-decoration: none;
+  color: #c9d1d9;
+  background: #2a2a2a;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+#contributors li a:hover {
+  background: #444;
+  color: #ffd700;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #8b949e;
+  font-size: 0.9rem;
+  padding: 40px 10px;
+  border-top: 1px solid #444;
+}
